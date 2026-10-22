@@ -1,0 +1,22 @@
+__pycache__/
+*.pyc
+*.nes
+*.state
+/data/
+/runs/
+/features/
+*.pt
+*.npz
+!results/**/*.npz
+.DS_Store
+logs/
+
+!results/checkpoints/**/*.pt
+.venv/
+.vscode/
+
+# Kept locally, not published: footage, screenshots and emulator replays of the game
+results/**/*.mp4
+results/**/*.bk2
+results/figures/gameplay_*.png
+slurm/paths.local.sh

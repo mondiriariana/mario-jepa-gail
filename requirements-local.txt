@@ -1,0 +1,13 @@
+# Laptop environment: editing, analysis, figures, loading checkpoints (CPU only).
+# Training and evaluation run on Andromeda; see README "Environment (BC Andromeda)".
+numpy
+scipy
+pandas
+matplotlib
+scikit-learn
+pyyaml
+tqdm
+einops
+av
+torch
+transformers==4.57.1
