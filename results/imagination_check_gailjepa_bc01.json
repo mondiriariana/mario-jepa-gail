@@ -1,0 +1,20 @@
+{
+ "GAIL+JEPA (BC reg.)": {
+  "mode": "gated",
+  "gate": -0.09062499552965164,
+  "kl_on_vs_off": 0.0011347527615725994,
+  "argmax_agreement_on_vs_off": 0.9969499707221985,
+  "heldout_on": {
+   "accuracy": 0.8070252733608363,
+   "nll": 0.6437145471572876,
+   "balanced_accuracy": 0.7257192468828448,
+   "accuracy_when_action_changes": 0.040482342807924204
+  },
+  "heldout_off": {
+   "accuracy": 0.8081467537149036,
+   "nll": 0.6439712047576904,
+   "balanced_accuracy": 0.7265309549378128,
+   "accuracy_when_action_changes": 0.037252368647717485
+  }
+ }
+}

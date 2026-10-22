@@ -1,0 +1,20 @@
+{
+ "BC+JEPA_v2": {
+  "mode": "mlp",
+  "gate": null,
+  "kl_on_vs_off": 0.0014477691147476435,
+  "argmax_agreement_on_vs_off": 0.9922500252723694,
+  "heldout_on": {
+   "accuracy": 0.830235911403052,
+   "nll": 0.5661571621894836,
+   "balanced_accuracy": 0.7320404712558025,
+   "accuracy_when_action_changes": 0.1821705426356589
+  },
+  "heldout_off": {
+   "accuracy": 0.8303760964473105,
+   "nll": 0.5702135562896729,
+   "balanced_accuracy": 0.7337593530575511,
+   "accuracy_when_action_changes": 0.1640826873385013
+  }
+ }
+}

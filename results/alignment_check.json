@@ -1,0 +1,108 @@
+{
+ "bk2": "$MJG_DATA/sub-01/ses-001/sub-01_ses-001_task-mario_level-w1l1_rep-000.bk2",
+ "n_input_lines": 4832,
+ "log_buttons": [
+  "A",
+  "Right",
+  "Left",
+  "Down",
+  "B",
+  "Select",
+  "Start",
+  "Up"
+ ],
+ "env_buttons": [
+  "B",
+  null,
+  "SELECT",
+  "START",
+  "UP",
+  "DOWN",
+  "LEFT",
+  "RIGHT",
+  "A"
+ ],
+ "n_replay_frames": 4831,
+ "log_vs_replay_button_agreement": [
+  {
+   "0": 0.9780538302277433,
+   "1": 1.0
+  },
+  {
+   "0": 0.9921325051759834,
+   "1": 1.0
+  },
+  {
+   "0": 0.9962732919254659,
+   "1": 1.0
+  },
+  {
+   "0": 1.0,
+   "1": 1.0
+  },
+  {
+   "0": 0.9950310559006211,
+   "1": 1.0
+  },
+  {
+   "0": 1.0,
+   "1": 1.0
+  },
+  {
+   "0": 1.0,
+   "1": 1.0
+  },
+  {
+   "0": 0.9995859213250518,
+   "1": 1.0
+  }
+ ],
+ "screen_shape": [
+  224,
+  240,
+  3
+ ],
+ "n_video_frames": 4830,
+ "video_shape": [
+  224,
+  240,
+  3
+ ],
+ "best_match": {
+  "mean_abs_err": 6.525722503662109,
+  "crop_y0": 0,
+  "crop_x0": 0,
+  "video_frame_i_equals_screen_i_plus": 0
+ },
+ "err_by_offset_at_best_crop": {
+  "-3": 11.177775382995605,
+  "-2": 10.259720802307129,
+  "-1": 7.773176670074463,
+  "0": 6.525722503662109,
+  "1": 9.754547119140625,
+  "2": 11.163422584533691,
+  "3": 11.600349426269531
+ },
+ "annotation_check": {
+  "RIGHT": {
+   "n_events": 19,
+   "mean_frac_pressed_inside": 0.9547200100839115,
+   "frac_pressed_at_frame_start": 0.0
+  },
+  "LEFT": {
+   "n_events": 9,
+   "mean_frac_pressed_inside": 0.9639080785337415,
+   "frac_pressed_at_frame_start": 0.0
+  },
+  "A": {
+   "n_events": 53,
+   "mean_frac_pressed_inside": 0.9278945833701779,
+   "frac_pressed_at_frame_start": 0.0
+  },
+  "B": {
+   "n_events": 12,
+   "mean_frac_pressed_inside": 0.9827402600899221,
+   "frac_pressed_at_frame_start": 0.0
+  }
+ }
+}

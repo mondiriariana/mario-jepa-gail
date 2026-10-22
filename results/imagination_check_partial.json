@@ -1,0 +1,36 @@
+{
+ "BC+JEPA": {
+  "gate": -0.07392322272062302,
+  "kl_on_vs_off": 0.0011964445002377033,
+  "argmax_agreement_on_vs_off": 0.9948499798774719,
+  "heldout_on": {
+   "accuracy": 0.8275323426923539,
+   "nll": 0.5664682984352112,
+   "balanced_accuracy": 0.7319796381540304,
+   "accuracy_when_action_changes": 0.19132213608957796
+  },
+  "heldout_off": {
+   "accuracy": 0.8282532943485401,
+   "nll": 0.5664952993392944,
+   "balanced_accuracy": 0.7331712556573434,
+   "accuracy_when_action_changes": 0.1820628768303187
+  }
+ },
+ "GAIL+JEPA_it150": {
+  "gate": -0.07466081529855728,
+  "kl_on_vs_off": 0.0006545913638547063,
+  "argmax_agreement_on_vs_off": 0.9962499737739563,
+  "heldout_on": {
+   "accuracy": 0.7967517122601835,
+   "nll": 0.7225916385650635,
+   "balanced_accuracy": 0.5408210506409948,
+   "accuracy_when_action_changes": 0.035852713178294575
+  },
+  "heldout_off": {
+   "accuracy": 0.7969519766091241,
+   "nll": 0.7244493961334229,
+   "balanced_accuracy": 0.5413236300674034,
+   "accuracy_when_action_changes": 0.035422049956933675
+  }
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "GAIL+JEPA": {
+  "mode": "gated",
+  "gate": -0.08721453696489334,
+  "kl_on_vs_off": 0.0009253550670109689,
+  "argmax_agreement_on_vs_off": 0.9950500130653381,
+  "heldout_on": {
+   "accuracy": 0.750670885568951,
+   "nll": 0.8056449294090271,
+   "balanced_accuracy": 0.340842436210735,
+   "accuracy_when_action_changes": 0.10142118863049096
+  },
+  "heldout_off": {
+   "accuracy": 0.7486281892097569,
+   "nll": 0.8089620471000671,
+   "balanced_accuracy": 0.3402850983370331,
+   "accuracy_when_action_changes": 0.10314384151593455
+  }
+ }
+}

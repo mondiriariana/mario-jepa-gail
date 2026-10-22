@@ -1,0 +1,42 @@
+{
+ "n_checked": 4,
+ "all_exact": true,
+ "episodes": [
+  {
+   "episode": 0,
+   "level": "w1l1",
+   "bk2": "$MJG_ROOT/results/demo_w1l1/GAIL+JEPA/bk2/env02/ep0000/SuperMarioBros-Nes-Level1-1-000000.bk2",
+   "n_steps": 82,
+   "replay_frames": 329,
+   "steps_compared": 82,
+   "x_match_frac": 1.0
+  },
+  {
+   "episode": 1,
+   "level": "w1l1",
+   "bk2": "$MJG_ROOT/results/demo_w1l1/GAIL+JEPA/bk2/env00/ep0000/SuperMarioBros-Nes-Level1-1-000000.bk2",
+   "n_steps": 111,
+   "replay_frames": 445,
+   "steps_compared": 111,
+   "x_match_frac": 1.0
+  },
+  {
+   "episode": 2,
+   "level": "w1l1",
+   "bk2": "$MJG_ROOT/results/demo_w1l1/GAIL+JEPA/bk2/env02/ep0001/SuperMarioBros-Nes-Level1-1-000000.bk2",
+   "n_steps": 74,
+   "replay_frames": 297,
+   "steps_compared": 74,
+   "x_match_frac": 1.0
+  },
+  {
+   "episode": 3,
+   "level": "w1l1",
+   "bk2": "$MJG_ROOT/results/demo_w1l1/GAIL+JEPA/bk2/env02/ep0002/SuperMarioBros-Nes-Level1-1-000000.bk2",
+   "n_steps": 72,
+   "replay_frames": 289,
+   "steps_compared": 72,
+   "x_match_frac": 1.0
+  }
+ ]
+}

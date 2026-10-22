@@ -1,0 +1,57 @@
+{
+ "seed": 0,
+ "data": {
+  "features": "${MJG_ROOT}/features/vjepa2_l_c8s2_g4",
+  "subjects": [
+   "sub-01"
+  ],
+  "heldout_sessions_every": 6,
+  "max_train_plays": 0
+ },
+ "model": {
+  "zdim": 1024,
+  "n_tokens": 16,
+  "d": 256,
+  "hidden": 256,
+  "adapter_layers": 2,
+  "pred_layers": 2,
+  "horizon": 4,
+  "use_jepa": true,
+  "imagination": true
+ },
+ "bc": {
+  "steps": 10000,
+  "batch": 512,
+  "lr": 0.0003,
+  "weight_decay": 0.05,
+  "jepa_lambda": 1.0,
+  "label_smoothing": 0.05,
+  "eval_every": 500
+ },
+ "gail": {
+  "iterations": 500,
+  "n_envs": 16,
+  "rollout": 128,
+  "max_episode_steps": 1500,
+  "gamma": 0.99,
+  "gae_lambda": 0.95,
+  "ppo_epochs": 4,
+  "minibatch": 512,
+  "clip": 0.2,
+  "lr": 5e-05,
+  "ent_coef": 0.01,
+  "vf_coef": 0.5,
+  "max_grad_norm": 0.5,
+  "jepa_lambda": 1.0,
+  "jepa_agent_frac": 0.5,
+  "bc_coef": 0.1,
+  "disc_lr": 0.0001,
+  "disc_steps": 4,
+  "disc_batch": 512,
+  "disc_grad_pen": 1.0,
+  "reward_clip": 10.0,
+  "levels": "auto",
+  "save_every": 25,
+  "traj_save_every": 50
+ }
+}
