@@ -82,8 +82,10 @@ def read_bk2_inputs(path: str) -> tuple[list[str], np.ndarray]:
     return names, np.asarray(rows, dtype=bool)
 
 
-def replay_bk2(path: str, integration_root: str, keep_frame=lambda k: True):
+def replay_bk2(path: str, integration_root: str, keep_frame=lambda k: True, ram_vars=None):
     """Replay a human ``.bk2`` through the emulator.
+
+    ``ram_vars`` lists the RAM variables recorded per frame (default ``RAM_VARS``).
 
     Returns a dict with:
       ``frames``: uint8 [n_kept, H, W, 3] screens for frames where ``keep_frame(k)``
@@ -106,13 +108,14 @@ def replay_bk2(path: str, integration_root: str, keep_frame=lambda k: True):
         env.reset()
         nb = env.num_buttons
         frames, idx, buttons = [], [], []
-        ram = {v: [] for v in RAM_VARS}
+        ram_vars = RAM_VARS if ram_vars is None else ram_vars
+        ram = {v: [] for v in ram_vars}
         k = 0
         while movie.step():
             keys = [movie.get_key(i, 0) for i in range(nb)]
             obs, _, _, _, info = env.step(keys)
             buttons.append(keys)
-            for v in RAM_VARS:
+            for v in ram_vars:
                 ram[v].append(info.get(v, 0))
             if keep_frame(k):
                 frames.append(obs)
